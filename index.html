@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Landing page demostrativa desarrollada con HTML, CSS y JavaScript.">
+  <title>NovaWeb | Soluciones digitales</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio"><span class="brand-mark">N</span> nova<span>web</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a class="nav-cta" href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> IDEAS QUE SE CONVIERTEN EN SOLUCIONES</p>
+          <h1>Impulsa tus ideas con <span>tecnología digital.</span></h1>
+          <p class="hero-text">Creamos experiencias digitales sencillas, modernas y funcionales para ayudar a personas y negocios a crecer.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#servicios">Conoce nuestros servicios <span>→</span></a>
+            <a class="text-link" href="#nosotros">Conócenos</a>
+          </div>
+          <div class="hero-note"><span class="check">✓</span> Diseño adaptable · Experiencia intuitiva · Soluciones prácticas</div>
+        </div>
+        <div class="hero-art" aria-label="Ilustración decorativa de una interfaz digital">
+          <div class="glow"></div>
+          <div class="browser-card">
+            <div class="browser-top"><i></i><i></i><i></i><span>novaweb.co</span></div>
+            <div class="mock-content">
+              <div class="mock-sidebar"><b></b><b></b><b></b><b></b></div>
+              <div class="mock-main">
+                <div class="mock-label">PANEL GENERAL</div>
+                <div class="mock-title"></div>
+                <div class="mock-subtitle"></div>
+                <div class="mock-stats"><div><small>Proyectos</small><strong>24</strong></div><div><small>Progreso</small><strong>86%</strong></div></div>
+                <div class="mock-chart"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="float-card"><span class="float-icon">✦</span><div><strong>Ideas en acción</strong><small>Diseño + tecnología</small></div></div>
+          <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-inner"><span>CREATIVIDAD</span><b>✦</b><span>INNOVACIÓN</span><b>✦</b><span>TECNOLOGÍA</span><b>✦</b><span>RESULTADOS</span></div>
+    </section>
+
+    <section class="section container" id="servicios">
+      <div class="section-heading">
+        <p class="eyebrow">LO QUE HACEMOS</p>
+        <h2>Soluciones pensadas para <span>avanzar.</span></h2>
+        <p>Combinamos creatividad y herramientas digitales para transformar necesidades en oportunidades.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card"><div class="service-icon purple">⌘</div><h3>Diseño web</h3><p>Páginas claras, atractivas y adaptables a diferentes dispositivos.</p><a href="#contacto">Saber más <span>→</span></a></article>
+        <article class="service-card featured"><div class="service-icon blue">⌁</div><h3>Desarrollo digital</h3><p>Experiencias funcionales que facilitan procesos y conectan personas.</p><a href="#contacto">Saber más <span>→</span></a></article>
+        <article class="service-card"><div class="service-icon orange">✧</div><h3>Asesoría tecnológica</h3><p>Orientación para elegir herramientas y mejorar ideas con tecnología.</p><a href="#contacto">Saber más <span>→</span></a></article>
+      </div>
+    </section>
+
+    <section class="about-section" id="nosotros">
+      <div class="container about-grid">
+        <div class="about-visual"><div class="about-square"><div class="big-symbol">N.</div><div class="small-pill">TECNOLOGÍA CON PROPÓSITO</div></div><div class="about-dot dot-a"></div><div class="about-dot dot-b"></div></div>
+        <div class="about-copy"><p class="eyebrow">QUIÉNES SOMOS</p><h2>La tecnología debe hacer la vida <span>más sencilla.</span></h2><p>En NovaWeb creemos que una buena solución digital comienza por entender a las personas. Por eso apostamos por diseños fáciles de usar, comunicación clara y mejora continua.</p><div class="about-points"><div><strong>01</strong><span>Escuchamos tus necesidades</span></div><div><strong>02</strong><span>Proponemos soluciones prácticas</span></div><div><strong>03</strong><span>Construimos experiencias útiles</span></div></div></div>
+      </div>
+    </section>
+
+    <section class="contact-section container" id="contacto">
+      <div class="contact-panel">
+        <div><p class="eyebrow">HABLEMOS DE TU IDEA</p><h2>¿Listo para dar el <span>siguiente paso?</span></h2><p>Cuéntanos qué tienes en mente. Nos encantará conocer tu proyecto.</p></div>
+        <form id="contactForm" class="contact-form">
+          <label for="name">Tu nombre</label><input id="name" name="name" type="text" placeholder="Escribe tu nombre" required>
+          <label for="email">Correo electrónico</label><input id="email" name="email" type="email" placeholder="nombre@correo.com" required>
+          <label for="message">Mensaje</label><textarea id="message" name="message" rows="3" placeholder="Cuéntanos brevemente tu idea..." required></textarea>
+          <button class="button button-primary" type="submit">Enviar mensaje <span>→</span></button>
+          <p class="form-feedback" id="formFeedback" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner"><a class="brand footer-brand" href="#inicio"><span class="brand-mark">N</span> nova<span>web</span></a><p>© <span id="year"></span> NovaWeb. Proyecto demostrativo.</p><a href="#inicio">Volver arriba ↑</a></div>
+  </footer>
+</body>
+</html>
